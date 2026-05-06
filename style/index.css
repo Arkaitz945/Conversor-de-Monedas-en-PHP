@@ -1,0 +1,145 @@
+/* // // CSS (empieza por aquí)
+
+// Centrar todo el contenido en la página
+// Darle un color de fondo y una tarjeta blanca para el formulario
+// Estilizar el botón "Convertir" con color y hover
+// Hacer los inputs y selects más bonitos
+// Que se vea bien en móvil (responsive) */
+
+body {
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+}
+form {
+    background-color: white;
+    max-width: 420px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+h1 {
+    color: #185FA5;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #185FA5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0C447C;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.result {
+    margin-top: 1.25rem;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    text-align: center;
+}
+
+.result h2 {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 4px;
+}
+
+.result p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #0F6E56;
+    margin: 0;
+}
+
+.error {
+    margin-top: 1.25rem;
+    background-color: #FCEBEB;
+    color: #A32D2D;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+#intercambiar {
+    background-color: white;
+    color: #185FA5;
+    border: 1px solid #185FA5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#intercambiar:hover {
+    background-color: #185FA5;
+    color: white;
+}
+
+.result {
+    animation: aparecer 0.4s ease;
+}
+#historial {
+    max-width: 420px;
+    margin: 0 auto 2rem;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+}
+
+#historial h3 {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 0 0.5rem;
+}
+
+#historial li {
+    font-size: 0.9rem;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f2f5;
+    color: #333;
+}
+
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

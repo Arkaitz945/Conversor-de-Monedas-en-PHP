@@ -1,5 +1,5 @@
 <?php
-require_once '../models/ExchangeRate.php';
+require_once('models/ExchangeRate.php');
 
 class ExchangeRateController
 {
